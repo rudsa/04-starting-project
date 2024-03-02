@@ -1,9 +1,11 @@
 import React from "react";
 
 const Tabs = (props) => {
+  const ButtonContainer = props.buttonsContainer;
+
   return (
     <>
-      <menu>{props.buttons}</menu>
+      <ButtonContainer>{props.buttons}</ButtonContainer>
       {props.children}
     </>
   );
